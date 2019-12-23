@@ -40,12 +40,12 @@ class FormComponent extends React.Component<Props, State> {
     return (
       <div>
         <input
-          placeholder='UserName'
+          placeholder="UserName"
           onChange={this.onValueChange}
           value={this.state.textBoxValue}
           onKeyPress={this.handleKeyPress}
         ></input>
-        <button id='display' onClick={this.display}>
+        <button id="display" onClick={this.display}>
           Отобразить
         </button>
       </div>

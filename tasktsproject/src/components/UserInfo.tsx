@@ -10,8 +10,8 @@ interface Props {
 class UserInfo extends React.Component<Props, any> {
   render() {
     return (
-      <div className='info' key={this.props.login}>
-        <img className='avatar' src={this.props.avatar_url} />
+      <div className="info" key={this.props.login}>
+        <img className="avatar" src={this.props.avatar_url} />
         <br />
         {this.props.login} <br />
         {this.props.name}

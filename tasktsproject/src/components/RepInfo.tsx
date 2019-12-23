@@ -11,10 +11,10 @@ interface Props {
 class RepInfo extends React.Component<Props, any> {
   render() {
     return (
-      <div className='App' key={this.props.name}>
+      <div className="App" key={this.props.name}>
         Имя репозитория: {this.props.name} <br />
         Описание: {this.props.description} <br />
-        <div id='repinfo'>
+        <div id="repinfo">
           <img src={sf} />
           {this.props.forks_count}
           <img src={star} />

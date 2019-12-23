@@ -1,7 +1,7 @@
 import React from "react";
 import ErrorBoundary from "./components/ErrorBoundary";
 import Navbar from "./components/Navbar";
-import { Route, Switch } from "react-router-dom";
+import { Route } from "react-router-dom";
 import DisplayGit from "./components/DisplayGit";
 
 interface State {
@@ -66,12 +66,11 @@ class App extends React.Component<any, State> {
     return (
       <React.Fragment>
         <ErrorBoundary>
-          <div id='header'>
-            
-          </div><Navbar />
-          <Route path='/DisplayGit' component={DisplayGit} />
-          <div className='mainPage'>
-            <h1 className='GitViewer'>GitViewer</h1>
+          <div id="header"></div>
+          <Navbar />
+          <Route path="/DisplayGit" component={DisplayGit} />
+          <div className="mainPage">
+            <h1 className="GitViewer">GitViewer</h1>
           </div>
         </ErrorBoundary>
       </React.Fragment>

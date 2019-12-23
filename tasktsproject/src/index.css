@@ -163,15 +163,15 @@ p {
   justify-content: center;
   align-items: center;
 }
-.burger-menu__button:hover .burger-menu__lines{
-  filter:brightness(0.7);
+.burger-menu__button:hover .burger-menu__lines {
+  filter: brightness(0.7);
 }
 
-.burger-menu__button{
-  position:fixed;
-  top:10px;
-  left:10px;
-  z-index:30;
+.burger-menu__button {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 30;
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -179,39 +179,39 @@ p {
 }
 .burger-menu__lines,
 .burger-menu__lines::after,
-.burger-menu__lines::before{
+.burger-menu__lines::before {
   position: absolute;
   width: 40px;
   height: 6px;
   background-color: #fff;
 }
 
-.burger-menu__lines{
-  top:50%;
-  left:50%;
-  transform: translate(-50%,-50%);
+.burger-menu__lines {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.burger-menu__lines::before{
-  content:'';
-  top:-12px;
+.burger-menu__lines::before {
+  content: "";
+  top: -12px;
 }
-.burger-menu__lines::after{
-  content: '';
-  top:12px;
+.burger-menu__lines::after {
+  content: "";
+  top: 12px;
 }
-.burger-menu_active .burger-menu__lines{
+.burger-menu_active .burger-menu__lines {
   background-color: transparent;
 }
-.burger-menu_active .burger-menu__lines::before{
-  top:0;
+.burger-menu_active .burger-menu__lines::before {
+  top: 0;
   transform: rotate(45deg);
 }
-.burger-menu_active .burger-menu__lines::after{
-  top:0;
+.burger-menu_active .burger-menu__lines::after {
+  top: 0;
   transform: rotate(-45deg);
 }
 
-.burger-menu__nav{
+.burger-menu__nav {
   padding-top: 80px;
   position: fixed;
   z-index: 20;
@@ -219,15 +219,15 @@ p {
   flex-flow: column;
   height: 100%;
   background-color: #2a2a2a;
-  overflow-y:auto;
-  left:-100%;
+  overflow-y: auto;
+  left: -100%;
 }
 
-.burger-menu_active .burger-menu__nav{
-  left:0;
+.burger-menu_active .burger-menu__nav {
+  left: 0;
 }
 
-.burger-menu__link{
+.burger-menu__link {
   padding: 30px;
   font-family: sans-serif;
   font-size: 32px;
@@ -235,25 +235,25 @@ p {
   text-transform: uppercase;
   letter-spacing: 5px;
   font-weight: bold;
-  color:#fff;
+  color: #fff;
 }
 
-.burger-menu__link:hover{
+.burger-menu__link:hover {
   filter: brightness(0.7);
 }
-.burger-menu__overlay{
+.burger-menu__overlay {
   display: none;
-  position:fixed;
-  top:0;
-  left:0;
-  width:100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
   height: 100vh;
   z-index: 10;
 }
 
-.burger-menu_active .burger-menu__overlay{
+.burger-menu_active .burger-menu__overlay {
   display: block;
 }
-.burger-menu__link:focus{
-outline: none;
+.burger-menu__link:focus {
+  outline: none;
 }

@@ -63,8 +63,8 @@ class DisplayGit extends React.Component<any, State> {
           inputsave={this.save}
           following={this.following}
         />
-        <div id='main'>
-          <div id='left'>
+        <div id="main">
+          <div id="left">
             <DisplayUserInfo
               login={this.state.login}
               avatar_url={this.state.avatar_url}
@@ -72,17 +72,17 @@ class DisplayGit extends React.Component<any, State> {
               followers={this.state.followers}
               name={this.state.name}
             />
-            <div id='avatars'>
+            <div id="avatars">
               <DisplayFollowing
                 bites={this.state.bites}
                 avatar_url={this.state.avatar_url}
-              /></div>
-            </div>
-            <div id='right'>
-              <DisplayRep hits={this.state.hits} name={this.state.name} />
+              />
             </div>
           </div>
-        
+          <div id="right">
+            <DisplayRep hits={this.state.hits} name={this.state.name} />
+          </div>
+        </div>
       </React.Fragment>
     );
   }
