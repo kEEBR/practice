@@ -1,0 +1,49 @@
+{
+  "name": "tasktsproject",
+  "version": "0.1.0",
+  "private": true,
+  "proxy":"http://localhost:5000",
+  "dependencies": {
+    "@material-ui/core": "^4.7.0",
+    "@material-ui/icons": "^4.5.1",
+    "@types/jest": "24.0.23",
+    "@types/node": "12.12.12",
+    "@types/react": "16.9.13",
+    "@types/react-dom": "16.9.4",
+    "bootstrap": "^4.3.1",
+    "classnames": "^2.2.6",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-bootstrap": "^1.0.0-beta.16",
+    "react-dom": "^16.12.0",
+    "react-native-gesture-handler": "^1.5.2",
+    "react-navigation": "^4.0.10",
+    "react-navigation-stack": "^1.10.3",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.2.0",
+    "reactstrap": "^8.1.1",
+    "typescript": "3.7.2"
+    
+  },
+  "scripts": {
+    "start": "PORT=5000 react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

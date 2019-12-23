@@ -1,0 +1,259 @@
+body {
+  height: 100%;
+  width: 100%;
+  background: #4a4644;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+div {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+input {
+  width: 300px;
+  font-size: 13px;
+  padding: 6px 0 4px 10px;
+  border: 1px solid #cecece;
+  background: #f6f6f6;
+  margin-left: 55px;
+  margin-right: 10px;
+}
+input:focus {
+  outline: none;
+}
+#display {
+  margin-right: 450px;
+  background: #ffffff;
+  color: black;
+  border: 1px solid black;
+  transition: 0.2s;
+}
+
+.App {
+  border: 1px solid black;
+  background: #d5d0cc;
+  flex-direction: row;
+  margin: 10px;
+  width: 75%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.App:hover {
+  background: #53ea93;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+#header {
+  justify-content: flex-start;
+  flex-shrink: 0;
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  width: 100%;
+  background: #2c2622;
+  height: 50px;
+}
+p {
+  margin-left: 50px;
+}
+.info {
+  border: 1px solid black;
+  background: #d5d0cc;
+  padding: 10px;
+  font-weight: bold;
+  width: 300px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #444444;
+  line-height: 30px;
+}
+.info:hover {
+  color: brown;
+}
+.avatar {
+  width: 230px;
+  height: 230px;
+  border-radius: 500px;
+}
+.about {
+  border: 1px solid black;
+  background: #d5d0cc;
+  width: 300px;
+  height: 50px;
+  display: flex;
+  margin-top: 5px;
+  align-items: center;
+  justify-content: center;
+}
+.about:hover {
+  color: brown;
+}
+#left {
+  margin-top: 10px;
+  margin-left: 54px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  align-items: center;
+}
+#right {
+  margin-left: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow-y: auto;
+  flex-grow: 1;
+  height: 100%;
+}
+#main {
+  display: flex;
+  flex-grow: 1;
+  overflow: hidden;
+}
+#repinfo {
+  display: flex;
+}
+.avafol {
+  display: flex;
+  width: 70px;
+  height: 70px;
+  padding: 5px;
+}
+#avatars {
+  margin: 10px;
+  flex-direction: row;
+  display: flex;
+  max-height: 200px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+.GitViewer {
+  color: white;
+  font-size: 250px;
+  display: flex;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.mainPage {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.burger-menu__button:hover .burger-menu__lines{
+  filter:brightness(0.7);
+}
+
+.burger-menu__button{
+  position:fixed;
+  top:10px;
+  left:10px;
+  z-index:30;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #2a2a2a;
+}
+.burger-menu__lines,
+.burger-menu__lines::after,
+.burger-menu__lines::before{
+  position: absolute;
+  width: 40px;
+  height: 6px;
+  background-color: #fff;
+}
+
+.burger-menu__lines{
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+.burger-menu__lines::before{
+  content:'';
+  top:-12px;
+}
+.burger-menu__lines::after{
+  content: '';
+  top:12px;
+}
+.burger-menu_active .burger-menu__lines{
+  background-color: transparent;
+}
+.burger-menu_active .burger-menu__lines::before{
+  top:0;
+  transform: rotate(45deg);
+}
+.burger-menu_active .burger-menu__lines::after{
+  top:0;
+  transform: rotate(-45deg);
+}
+
+.burger-menu__nav{
+  padding-top: 80px;
+  position: fixed;
+  z-index: 20;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  background-color: #2a2a2a;
+  overflow-y:auto;
+  left:-100%;
+}
+
+.burger-menu_active .burger-menu__nav{
+  left:0;
+}
+
+.burger-menu__link{
+  padding: 30px;
+  font-family: sans-serif;
+  font-size: 32px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  color:#fff;
+}
+
+.burger-menu__link:hover{
+  filter: brightness(0.7);
+}
+.burger-menu__overlay{
+  display: none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100vw;
+  height: 100vh;
+  z-index: 10;
+}
+
+.burger-menu_active .burger-menu__overlay{
+  display: block;
+}
+.burger-menu__link:focus{
+outline: none;
+}
